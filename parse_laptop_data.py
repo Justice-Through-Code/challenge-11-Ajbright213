@@ -107,7 +107,7 @@ def print_laptop_data(laptop, topic):
 #   1.3.3: The screen_size of the Dell XPS.
 print_laptop_data('Apple Macbook Pro', 'price')
 print_laptop_data('Dell XPS', 'colors')
-print_laptop_data('Dell XPS', 'screen_size')
+print_laptop_data('Apple Macbook Pro', 'screen_size')
 
 
 # 2.1 TODO: Write a function called `list_prices` that takes one parameter: a list of computers, and returns nothing.
@@ -115,9 +115,9 @@ print_laptop_data('Dell XPS', 'screen_size')
 #   No need to specify which computer each price belongs to.
 def list_prices(laptops):
     for laptop in laptops:
-        for types_listed in laptop['types']:
-            for price_listed in types_listed['price']:
-                print(price_listed)
+        for types_laptop in laptop['types']:
+            for prices in types_laptop['price']:
+                print(prices)
 
 
 # 2.2 TODO: Call your function to see that it works.
